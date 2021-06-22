@@ -16,7 +16,7 @@ include_once('../head.php');
 </form>
 
 <?php
-echo "오늘 뭐할래???? : ";
+echo " DB 연결됐어? : ";
 echo $_GET["id"];
 
 
@@ -24,14 +24,10 @@ echo $_GET["id"];
 	$host = 'localhost';
     $user = 'fpem3309';
     $pw = 'fpemzhaqh77!';
-    $dbName = 'fpem3309';
+    $db = 'fpem3309';
 
-	//$host = 'localhost';
-    //$user = 'root';
-    //$pw = 'fpem3309';
-    //$dbName = 'study';
 
-    $mysqli = new mysqli($host, $user, $pw, $dbName);
+    $mysqli = new mysqli($host, $user, $pw, $db);
  
     if($mysqli){
         echo "MySQL 접속 성공";
