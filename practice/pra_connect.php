@@ -8,8 +8,7 @@ include_once('../head.php');
 
 
 
-
-<h1>연습해봅시다잉</h1>
+<h3>Mysql Connect</h3>
 <form>
 <input type="text" name="id""/>
 <input type="submit" value="submit"/>
@@ -36,9 +35,9 @@ echo $_GET["id"];
     }
 
 
-
 ?>
 
+<h3>Img Upload</h3>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>" enctype="multipart/form-data">
         <input type="file" name="upload[]" multiple>
         <input type="submit" value="send">
@@ -66,6 +65,17 @@ echo $_GET["id"];
         }
     }
 ?>
+
+
+
+
+<h3>Form POST</h3>
+<form action="<?=$_SERVER['PHP_SELF']?>" method="POST">
+<input type="text" name="id" placeholder="form태그로 현재에 보낼 내용"/>
+<input type="submit" value="gogo"/>
+</form>
+
+<p><?=$_POST['id'];?></p>
 
 
 
