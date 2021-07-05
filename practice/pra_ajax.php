@@ -4,49 +4,24 @@
 
 
 
-<!-- <?for($i=0; $i<4; $i++){?>
-<div>
-	<ul>
-		<li>a</li>
-		<li>b</li>
-		<li>c</li>
-	<ul>
-</div>
+<?php
+
+	$host = 'localhost';
+    $user = 'fpem3309';
+    $pw = 'fpemzhaqh77!';
+    $db = 'fpem3309';
 
 
-<div>
-	<ul>
-		<li>d</li>
-		<li>e</li>
-		<li>f</li>
-	<ul>
-</div>
- <?}?>
- -->
-
-<?$data=[1,2,3,4];?>
-
-<?foreach($data as $key => $value){?>
-
-<div>
-	<ul>
-		<li>a</li>
-		<li>b</li>
-		<li>c</li>
-	<ul>
-</div>
+    $mysqli = new mysqli($host, $user, $pw, $db);
+ 
+    if($mysqli){
+        echo "MySQL 접속 성공";
+    }else{
+        echo "MySQL 접속 실패";
+    }
 
 
-<div>
-	<ul>
-		<li>d</li>
-		<li>e</li>
-		<li>f</li>
-	<ul>
-</div>
-
-<?}?>
-
+?>
 
 
 

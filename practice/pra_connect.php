@@ -10,14 +10,13 @@ include_once('../head.php');
 
 <h3>Mysql Connect</h3>
 <form>
-<input type="text" name="id""/>
+<input type="text" name="id"/>
 <input type="submit" value="submit"/>
 </form>
 
 <?php
 echo " DB 연결됐어? : ";
 echo $_GET["id"];
-
 
 
 	$host = 'localhost';
@@ -75,7 +74,7 @@ echo $_GET["id"];
 <input type="submit" value="gogo"/>
 </form>
 
-<p><?=$_POST['id'];?></p>
+<p>form태그로 넘어온 내용 : <?=$_POST['id'];?></p>
 
 
 
